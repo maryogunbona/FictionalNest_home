@@ -1,0 +1,101 @@
+@charset "utf-8";
+html {
+    background-color: #fff8dc;
+
+
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Courier New';
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .site-title {
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title and line */
+    color: #333;
+    font-family: 'Courier New';
+  }
+  
+  /* Line of demarcation beneath the title */
+  .title-line {
+    border: none;
+    height: 2px;
+    background-color: #333; /* Dark line */
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Navigation bar styling */
+  .navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 0; /* Padding around the navbar */
+    text-align: center;
+  }
+  
+  .nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display items horizontally */
+    justify-content: center; /* Center items horizontally */
+    gap: 90px; /* Space between the links */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Font size */
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for navigation links */
+  .nav-links a:hover {
+    background-color: #ffdd57; /* Yellow background on hover */
+    color: #333; /* Dark text on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+  }
+  
+  /* Main content styling */
+  .main-content {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+}
