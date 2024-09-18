@@ -3,9 +3,6 @@ html {
     background-color: #fff8dc;
 
 
-/* styles.css */
-
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +12,8 @@ html {
   /* Body styling */
   body {
     font-family: 'Courier New';
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark text color */
+    background-color: #f0f0f0;
+    color: #333; 
     margin: 0;
     padding: 0;
   }
@@ -26,7 +23,7 @@ html {
     background-color: #fff;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
   }
@@ -34,7 +31,7 @@ html {
   .site-title {
     font-size: 4.5em;
     font-weight: bold;
-    margin-bottom: 10px; /* Space between title and line */
+    margin-bottom: 10px; 
     color: #333;
     font-family: 'Courier New';
   }
@@ -43,40 +40,40 @@ html {
   .title-line {
     border: none;
     height: 2px;
-    background-color: #333; /* Dark line */
+    background-color: #333;
     width: 80%;
     margin: 0 auto;
   }
   
   /* Navigation bar styling */
   .navbar {
-    background-color: #333; /* Dark background for the navbar */
-    padding: 10px 0; /* Padding around the navbar */
+    background-color: #333;
+    padding: 10px 0; 
     text-align: center;
   }
   
   .nav-links {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Display items horizontally */
-    justify-content: center; /* Center items horizontally */
-    gap: 90px; /* Space between the links */
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 90px; 
     padding: 0;
     margin: 0;
   }
   
   .nav-links a {
-    color: white; /* White text color for links */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2em; /* Font size */
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.2em; 
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+    transition: background-color 0.3s, color 0.3s; 
   }
   
   /* Hover effect for navigation links */
   .nav-links a:hover {
-    background-color: #ffdd57; /* Yellow background on hover */
-    color: #333; /* Dark text on hover */
-    border-radius: 4px; /* Rounded corners on hover */
+    background-color: #ffdd57; 
+    color: #333;
+    border-radius: 4px; 
   }
   
   /* Main content styling */
