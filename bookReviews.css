@@ -20,7 +20,7 @@ html {
   
   /* Header styling */
   .header {
-    background-color: #fff;
+    background-color: #fff8dc;
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -107,6 +107,34 @@ button#search-button:hover {
 }
   
 /* Book results section */
+
+.book-suggestion {
+    display: inline-block;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .book-suggestion img {
+    width: 150px;
+    height: auto;
+  }
+
+  
+  
+  .book-suggestion .book-details {
+    margin-top: 5px;
+  }
+  
+  #suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+
+
 #search-results {
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +172,17 @@ button#search-button:hover {
   
 .book-item p {
     margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #555;
 }
+
+.book-description {
+    transition: all 0.3s ease;
+  }
+  
+.book-item:hover .book-title, .book-item:hover .book-cover {
+    cursor: pointer;
+  }
   
 .rating-input {
     width: 100%;
