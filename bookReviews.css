@@ -82,6 +82,90 @@ html {
     text-align: center;
     margin-top: 20px;
   }
+
+  input#search-input {
+    padding: 10px;
+    width: 60%;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+  
+button#search-button {
+    padding: 10px 15px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button#search-button:hover {
+    background-color: #0056b3;
+}
+  
+/* Book results section */
+#search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+  
+.book-item:hover {
+    transform: scale(1.05);
+}
+  
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+.book-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+  
+.book-item p {
+    margin-bottom: 10px;
+}
+  
+.rating-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+  
+.rate-button {
+    background-color: #ffdd57;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.rate-button:hover {
+    background-color: #ffcc00;
+}
+  
+
+  
   
   /* Footer styling */
   .footer {
