@@ -1,0 +1,97 @@
+@charset "utf-8";
+html {
+    background-color: #fff8dc;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Courier New';
+    background-color: #f0f0f0;
+    color: #333; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .site-title {
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    color: #333;
+    font-family: 'Courier New';
+  }
+  
+  /* Line of demarcation beneath the title */
+  .title-line {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Navigation bar styling */
+  .navbar {
+    background-color: #333;
+    padding: 10px 0; 
+    text-align: center;
+  }
+  
+  .nav-links {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 90px; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.2em; 
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  /* Hover effect for navigation links */
+  .nav-links a:hover {
+    background-color: #ffdd57; 
+    color: #333;
+    border-radius: 4px; 
+  }
+  
+  /* Main content styling */
+  .main-content {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+}
