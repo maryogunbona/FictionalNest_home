@@ -117,7 +117,7 @@ const apiKey = "AIzaSyDL_J47JCIjjrfrT0rVw9IvlGACWx1fTSQ"; // Google Books API ke
           coverElement.addEventListener("click", toggleDescription);
         });
 
-    // Add functionality to the rating buttons
+        // Add functionality to the rating buttons
         const rateButtons = document.querySelectorAll(".rate-button");
         rateButtons.forEach((button) => {
           button.addEventListener("click", () => {
