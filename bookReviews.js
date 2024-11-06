@@ -118,15 +118,28 @@ const apiKey = "AIzaSyDL_J47JCIjjrfrT0rVw9IvlGACWx1fTSQ"; // Google Books API ke
         });
 
         // Add functionality to the rating buttons
-        const rateButtons = document.querySelectorAll(".rate-button");
-        rateButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            const ratingInput = button.previousElementSibling;
-            const ratingValue = ratingInput.value;
-            alert(`You rated this book ${ratingValue} star(s)!`);
-          });
-        });
-      } else {
-        resultsContainer.innerHTML = "<p>No results found.</p>";
-      }
+function saveRating(bookId) {
+  const ratingInput = document.querySelector(`.rating-input[data-book-id="${bookId}"]`);
+  const userRating = ratingInput.value;
+  if (userRating >= 1 && userRating <= 5) {
+    localStorage.setItem(bookId, userRating);
+    document.getElementById(`rating-${bookId}`).textContent = `Your Rating: ${userRating} star(s)`;
+    alert(`You rated this book ${userRating} star(s)!`);
+  } else {
+    alert("Please enter a rating between 1 and 5.");
+  }
+}
+
+// Load saved ratings from local storage
+function loadSavedRatings() {
+  const allRatingElements = document.querySelectorAll(".user-rating");
+  allRatingElements.forEach((ratingElement) => {
+    const bookId = ratingElement.id.replace("rating-", "");
+    const savedRating = localStorage.getItem(bookId);
+    if (savedRating) {
+      ratingElement.textContent = `Your Rating: ${savedRating} star(s)`;
+      const ratingInput = document.querySelector(`.rating-input[data-book-id="${bookId}"]`);
+      ratingInput.value = savedRating;
     }
+  });
+}
