@@ -118,7 +118,6 @@ nav ul li a:hover {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px 0;
-    bottom: 0;
+    
     width: 100%;
   }
