@@ -54,6 +54,7 @@ nav ul li a {
     color: #fff;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
 }
 nav ul li a:hover {
     background-color: #e8deb5;
