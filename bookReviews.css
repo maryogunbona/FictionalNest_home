@@ -67,6 +67,7 @@ html {
     font-size: 1.2em; 
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s; 
+    font-weight: bold;
   }
   
   /* Hover effect for navigation links */
